@@ -9,7 +9,7 @@ import SwiftUI
 import OpenAPIRuntime
 import OpenAPIURLSession
 
-struct ContentView: View {
+struct ContentView<C: APIProtocol>: View {
     @State private var emoji = "🫥"
 
     var body: some View {
@@ -30,9 +30,13 @@ struct ContentView: View {
         .buttonStyle(.borderedProminent)
     }
 
-    let client: Client
+    let client: C
 
-    init() {
+    init(client: C) {
+        self.client = client
+    }
+
+    init() where C == Client {
         self.client = Client(
             serverURL: try! Servers.server1(),
             transport: URLSessionTransport()
@@ -58,6 +62,16 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(client: MockClient())
+    }
+}
+
+struct MockClient: APIProtocol {
+    func getGreeting(_ input: Operations.getGreeting.Input) async throws -> Operations.getGreeting.Output {
+        let name = input.query.name ?? "mika"
+        let emojis = String(repeating: "🤖", count: 2)
+        return .ok(Operations.getGreeting.Output.Ok(
+            body: .json(Components.Schemas.Greeting(message: name))
+        ))
     }
 }
