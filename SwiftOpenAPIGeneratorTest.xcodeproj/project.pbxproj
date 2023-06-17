@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4D1110A2A3D35590057141C /* SwiftOpenAPIGeneratorTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D111092A3D35590057141C /* SwiftOpenAPIGeneratorTestApp.swift */; };
+		D4D1110C2A3D35590057141C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D1110B2A3D35590057141C /* ContentView.swift */; };
+		D4D1110E2A3D355C0057141C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D1110D2A3D355C0057141C /* Assets.xcassets */; };
+		D4D111112A3D355C0057141C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D111102A3D355C0057141C /* Preview Assets.xcassets */; };
+		D4D1111A2A3D3E6C0057141C /* OpenAPIRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = D4D111192A3D3E6C0057141C /* OpenAPIRuntime */; };
+		D4D111202A3D40960057141C /* OpenAPIURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = D4D1111F2A3D40960057141C /* OpenAPIURLSession */; };
+		D4D111252A3D42B70057141C /* openapi-generator-config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = D4D111232A3D42B70057141C /* openapi-generator-config.yaml */; };
+		D4D111262A3D42B70057141C /* openapi.yaml in Resources */ = {isa = PBXBuildFile; fileRef = D4D111242A3D42B70057141C /* openapi.yaml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D4D111062A3D35590057141C /* SwiftOpenAPIGeneratorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftOpenAPIGeneratorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4D111092A3D35590057141C /* SwiftOpenAPIGeneratorTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOpenAPIGeneratorTestApp.swift; sourceTree = "<group>"; };
+		D4D1110B2A3D35590057141C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D4D1110D2A3D355C0057141C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4D111102A3D355C0057141C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D4D111232A3D42B70057141C /* openapi-generator-config.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = "openapi-generator-config.yaml"; sourceTree = "<group>"; };
+		D4D111242A3D42B70057141C /* openapi.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = openapi.yaml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4D111032A3D35590057141C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D111202A3D40960057141C /* OpenAPIURLSession in Frameworks */,
+				D4D1111A2A3D3E6C0057141C /* OpenAPIRuntime in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4D110FD2A3D35590057141C = {
+			isa = PBXGroup;
+			children = (
+				D4D111082A3D35590057141C /* SwiftOpenAPIGeneratorTest */,
+				D4D111072A3D35590057141C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4D111072A3D35590057141C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4D111062A3D35590057141C /* SwiftOpenAPIGeneratorTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4D111082A3D35590057141C /* SwiftOpenAPIGeneratorTest */ = {
+			isa = PBXGroup;
+			children = (
+				D4D111232A3D42B70057141C /* openapi-generator-config.yaml */,
+				D4D111242A3D42B70057141C /* openapi.yaml */,
+				D4D111092A3D35590057141C /* SwiftOpenAPIGeneratorTestApp.swift */,
+				D4D1110B2A3D35590057141C /* ContentView.swift */,
+				D4D1110D2A3D355C0057141C /* Assets.xcassets */,
+				D4D1110F2A3D355C0057141C /* Preview Content */,
+			);
+			path = SwiftOpenAPIGeneratorTest;
+			sourceTree = "<group>";
+		};
+		D4D1110F2A3D355C0057141C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D4D111102A3D355C0057141C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4D111052A3D35590057141C /* SwiftOpenAPIGeneratorTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4D111142A3D355C0057141C /* Build configuration list for PBXNativeTarget "SwiftOpenAPIGeneratorTest" */;
+			buildPhases = (
+				D4D111022A3D35590057141C /* Sources */,
+				D4D111032A3D35590057141C /* Frameworks */,
+				D4D111042A3D35590057141C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4D111222A3D410A0057141C /* PBXTargetDependency */,
+			);
+			name = SwiftOpenAPIGeneratorTest;
+			packageProductDependencies = (
+				D4D111192A3D3E6C0057141C /* OpenAPIRuntime */,
+				D4D1111F2A3D40960057141C /* OpenAPIURLSession */,
+			);
+			productName = SwiftOpenAPIGeneratorTest;
+			productReference = D4D111062A3D35590057141C /* SwiftOpenAPIGeneratorTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4D110FE2A3D35590057141C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					D4D111052A3D35590057141C = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D4D111012A3D35590057141C /* Build configuration list for PBXProject "SwiftOpenAPIGeneratorTest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4D110FD2A3D35590057141C;
+			packageReferences = (
+				D4D111172A3D3E210057141C /* XCRemoteSwiftPackageReference "swift-openapi-generator" */,
+				D4D111182A3D3E6C0057141C /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */,
+				D4D1111E2A3D40960057141C /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */,
+			);
+			productRefGroup = D4D111072A3D35590057141C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4D111052A3D35590057141C /* SwiftOpenAPIGeneratorTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4D111042A3D35590057141C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D111112A3D355C0057141C /* Preview Assets.xcassets in Resources */,
+				D4D111262A3D42B70057141C /* openapi.yaml in Resources */,
+				D4D1110E2A3D355C0057141C /* Assets.xcassets in Resources */,
+				D4D111252A3D42B70057141C /* openapi-generator-config.yaml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4D111022A3D35590057141C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D1110C2A3D35590057141C /* ContentView.swift in Sources */,
+				D4D1110A2A3D35590057141C /* SwiftOpenAPIGeneratorTestApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4D111222A3D410A0057141C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = D4D111212A3D410A0057141C /* OpenAPIGenerator */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D4D111122A3D355C0057141C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D4D111132A3D355C0057141C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4D111152A3D355C0057141C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftOpenAPIGeneratorTest/Preview Content\"";
+				DEVELOPMENT_TEAM = 95L82PNXV3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kamimi.SwiftOpenAPIGeneratorTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4D111162A3D355C0057141C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftOpenAPIGeneratorTest/Preview Content\"";
+				DEVELOPMENT_TEAM = 95L82PNXV3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kamimi.SwiftOpenAPIGeneratorTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4D111012A3D35590057141C /* Build configuration list for PBXProject "SwiftOpenAPIGeneratorTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4D111122A3D355C0057141C /* Debug */,
+				D4D111132A3D355C0057141C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4D111142A3D355C0057141C /* Build configuration list for PBXNativeTarget "SwiftOpenAPIGeneratorTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4D111152A3D355C0057141C /* Debug */,
+				D4D111162A3D355C0057141C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D4D111172A3D3E210057141C /* XCRemoteSwiftPackageReference "swift-openapi-generator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-generator";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+		D4D111182A3D3E6C0057141C /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-runtime";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+		D4D1111E2A3D40960057141C /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-urlsession";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D4D111192A3D3E6C0057141C /* OpenAPIRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4D111182A3D3E6C0057141C /* XCRemoteSwiftPackageReference "swift-openapi-runtime" */;
+			productName = OpenAPIRuntime;
+		};
+		D4D1111F2A3D40960057141C /* OpenAPIURLSession */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4D1111E2A3D40960057141C /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */;
+			productName = OpenAPIURLSession;
+		};
+		D4D111212A3D410A0057141C /* OpenAPIGenerator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4D111172A3D3E210057141C /* XCRemoteSwiftPackageReference "swift-openapi-generator" */;
+			productName = "plugin:OpenAPIGenerator";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D4D110FE2A3D35590057141C /* Project object */;
+}

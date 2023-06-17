@@ -1,0 +1,6 @@
+generate:
+  - types
+  - client # typesのコードに依存する
+#  - server # typesのコードに依存する。サーバーのコード
+#additionalImports: # （任意）文字列の配列。各文字列の値。Swiftモジュール名。生成されたソースファイルには、各モジュールに対してimport文が追加されます。
+
